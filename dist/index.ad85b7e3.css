@@ -1,0 +1,53 @@
+@import "https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap";
+@font-face {
+  font-family: LibertinusMath-Regular;
+  src: url("LibertinusMath-Regular.5f51730d.otf");
+}
+
+@font-face {
+  font-family: LibertinusMono-Regular;
+  src: url("LibertinusMono-Regular.94eb0bd8.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #131317;
+}
+
+.burger {
+  color: #e9e9e9;
+  border-radius: 200px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+nav {
+  height: 7vh;
+  background: #07070a;
+}
+
+h1 {
+  color: #e9e9e9;
+  font-family: Crimson Pro, serif;
+  font-size: 11vh;
+  font-weight: 400;
+}
+
+#home {
+  color: #e9e9e9;
+  justify-content: left;
+  display: flex;
+}
+
+#equal {
+  color: #e9e9e9;
+  background: #e9470c;
+}
+
+/*# sourceMappingURL=index.ad85b7e3.css.map */
