@@ -29,36 +29,31 @@ input {
 
 .sticky {
   width: 100%;
-  position: fixed;
-  top: 0;
+  position: sticky;
 }
 
 .navbar {
-  height: 7vh;
+  min-height: 1rem;
   background: #07070a;
   padding: 16px 0 13px 45px;
 }
 
 .burger {
-  height: 3.5vh;
+  min-height: 1rem;
 }
 
 .logoNewton {
   color: #e9e9e9;
   padding: 2rem 0 .2rem;
   font-family: Crimson Pro, serif;
-  font-size: 11vh;
+  font-size: 7rem;
   font-weight: 400;
 }
 
-.inputBarArea {
-  height: 3.4rem;
-  width: 100%;
-  background: #e9e9e9;
-  border-radius: 8px;
-  align-items: center;
-  padding-right: .4rem;
-  display: flex;
+.inputSection {
+  width: 45%;
+  min-width: 36rem;
+  padding-bottom: 1.2rem;
 }
 
 .inputBar {
@@ -76,40 +71,55 @@ input {
   height: 100%;
 }
 
-.inputSection {
-  min-width: 45%;
-  width: 45%;
-  padding-bottom: 2rem;
+.inputBarArea {
+  height: 3.4rem;
+  width: 100%;
+  background: #e9e9e9;
+  border-radius: 8px;
+  align-items: center;
+  padding-right: .4rem;
+  display: flex;
 }
 
 .keyBoardSection {
   width: 38%;
-  background: #7fff00;
-  padding: 2rem;
-}
-
-.keyboardArea {
-  grid-template-columns: 2rem repeat(8, 2rem);
-  justify-content: center;
-  align-items: center;
-  gap: .4rem .8rem;
-  display: grid;
+  min-width: 27rem;
+  padding-top: .2rem;
 }
 
 .keyboardButton {
-  min-height: 2rem;
-  background: #8a2be2;
+  height: 3rem;
+  width: 3.4rem;
+  background: #e9e9e9;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  font-family: LibertinusMath-Regular, serif;
+  font-size: 21px;
+  display: flex;
+}
+
+.clearButton {
+  background: #f19675;
+}
+
+.alignKeyboard {
+  grid-column-start: 2;
+}
+
+.keyboardArea {
+  width: 100%;
+  grid-template-columns: 2rem repeat(8, 2rem);
+  justify-content: center;
+  align-items: center;
+  gap: .7rem 6%;
+  display: grid;
 }
 
 .resultSection {
-  width: 35%;
+  width: 37%;
+  min-width: 29rem;
   padding: 4rem 0 1rem;
-}
-
-.resultBoxBackground {
-  background: #5e5e61;
-  border-radius: 8px;
-  padding: 2.2rem;
 }
 
 .resultBox {
@@ -122,6 +132,12 @@ input {
   padding: 2rem;
   display: flex;
   position: relative;
+}
+
+.resultBoxBackground {
+  background: #5e5e61;
+  border-radius: 8px;
+  padding: 2.2rem;
 }
 
 body {

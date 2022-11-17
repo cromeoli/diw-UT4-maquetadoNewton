@@ -16,37 +16,35 @@ input
 ///////////////////// Navbar
 
 .sticky
-  position: fixed
-  top: 0
+  position: sticky
   width: 100%
 
 .navbar
   background: variables.$colorBlacknoire
-  height: 7vh
+  min-height: 1rem
   padding: 16px 0px 13px 45px
 
 .burger
-  height: 3.5vh
+  min-height: 1rem
 
 
 ///////////////////// Logo
+.logoSection
+
 .logoNewton
   color: variables.$colorMercury
   font-family: variables.$fontCrimsonPro
-  font-size: 11vh
+  font-size: 7rem
   font-weight: 400
   padding: 2rem 0px 0.2rem 0px
 
+
 ///////////////////// inputArea
 
-.inputBarArea
-  display: flex
-  background: variables.$colorMercury
-  border-radius: 8px
-  height: 3.4rem
-  width: 100%
-  align-items: center
-  padding-right: 0.4rem
+.inputSection
+  width: 45%
+  min-width: 36rem
+  padding-bottom: 1.2rem
 
 .inputBar
   background: variables.$colorMercury
@@ -60,40 +58,55 @@ input
 .equalImg
   height: 100%
 
-.inputSection
-  min-width: 45%
-  width: 45%
-  padding-bottom: 2rem
+.inputBarArea
+  display: flex
+  background: variables.$colorMercury
+  border-radius: 8px
+  height: 3.4rem
+  width: 100%
+  align-items: center
+  padding-right: 0.4rem
+
 
 ///////////////////// Keyboard
 
 .keyBoardSection
-  background: chartreuse
   width: 38%
-  padding: 2rem
+  min-width: 27rem
+  padding-top: 0.2rem
+
+.keyboardButton
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: variables.$fontLibMath
+  font-size: 21px
+  height: 3rem
+  width: 3.4rem
+  border-radius: 2px
+  background: variables.$colorMercury
+
+.clearButton
+  background: variables.$colorClearOrange
+
+.alignKeyboard
+  grid-column-start: 2
 
 .keyboardArea
+  width: 100%
   display: grid
-
   justify-content: center
   align-items: center
   grid-template-columns: 2rem repeat(8, 2rem)
-  row-gap: 0.4rem
-  column-gap: 0.8rem
+  row-gap: 0.7rem
+  column-gap: 6%
 
-.keyboardButton
-  min-height: 2rem
-  background: blueviolet
 
 ///////////////////// Result
 .resultSection
+  width: 37%
+  min-width: 29rem
   padding: 4rem 0px 1rem 0px
-  width: 35%
-
-.resultBoxBackground
-  padding: 2.2rem
-  border-radius: 8px
-  background: #5e5e61
 
 .resultBox
   display: flex
@@ -105,6 +118,12 @@ input
   padding: 2rem
   border-radius: 8px
   background: variables.$colorMercury
+
+.resultBoxBackground
+  padding: 2.2rem
+  border-radius: 8px
+  background: #5e5e61
+
 
 ///////////////////////////////
 
