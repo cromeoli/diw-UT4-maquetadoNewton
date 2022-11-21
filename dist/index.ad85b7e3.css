@@ -20,6 +20,10 @@ input {
   all: unset;
 }
 
+a:visited {
+  color: #000;
+}
+
 .mainFrame {
   flex-direction: column;
   justify-content: center;
@@ -39,7 +43,12 @@ input {
 }
 
 .burger {
-  min-height: 1rem;
+  height: 100%;
+}
+
+.burgerContainer {
+  width: 20px;
+  height: 20px;
 }
 
 .logoNewton {
@@ -82,9 +91,14 @@ input {
 }
 
 .keyBoardSection {
-  width: 38%;
+  width: 100%;
   min-width: 27rem;
+  grid-template-columns: 2rem repeat(8, 2rem);
+  justify-content: center;
+  align-items: center;
+  gap: .7rem 30px;
   padding-top: .2rem;
+  display: grid;
 }
 
 .keyboardButton {
@@ -100,20 +114,18 @@ input {
 }
 
 .clearButton {
+  height: 100%;
+  width: 100%;
   background: #f19675;
+}
+
+.customIcon {
+  height: 100%;
+  width: 100%;
 }
 
 .alignKeyboard {
   grid-column-start: 2;
-}
-
-.keyboardArea {
-  width: 100%;
-  grid-template-columns: 2rem repeat(8, 2rem);
-  justify-content: center;
-  align-items: center;
-  gap: .7rem 6%;
-  display: grid;
 }
 
 .resultSection {

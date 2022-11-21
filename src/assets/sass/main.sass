@@ -7,6 +7,10 @@
 
 input
   all: unset
+
+a:visited
+  color: black
+
 .mainFrame
   display: flex
   flex-direction: column
@@ -25,11 +29,16 @@ input
   padding: 16px 0px 13px 45px
 
 .burger
-  min-height: 1rem
+  height: 100%
 
+.burgerContainer
+  width: 20px
+  height: 20px
 
 ///////////////////// Logo
 .logoSection
+
+
 
 .logoNewton
   color: variables.$colorMercury
@@ -71,9 +80,15 @@ input
 ///////////////////// Keyboard
 
 .keyBoardSection
-  width: 38%
+  width: 100%
   min-width: 27rem
   padding-top: 0.2rem
+  display: grid
+  justify-content: center
+  align-items: center
+  grid-template-columns: 2rem repeat(8, 2rem)
+  row-gap: 0.7rem
+  column-gap: 30px
 
 .keyboardButton
   display: flex
@@ -87,19 +102,17 @@ input
   background: variables.$colorMercury
 
 .clearButton
+  height: 100%
+  width: 100%
   background: variables.$colorClearOrange
+
+.customIcon
+  height: 100%
+  width: 100%
+
 
 .alignKeyboard
   grid-column-start: 2
-
-.keyboardArea
-  width: 100%
-  display: grid
-  justify-content: center
-  align-items: center
-  grid-template-columns: 2rem repeat(8, 2rem)
-  row-gap: 0.7rem
-  column-gap: 6%
 
 
 ///////////////////// Result
