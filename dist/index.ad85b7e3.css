@@ -20,8 +20,8 @@ input {
   all: unset;
 }
 
-a:visited {
-  color: #000;
+a, a:visited {
+  color: #07070a;
 }
 
 .mainFrame {
@@ -39,8 +39,15 @@ a:visited {
 .navbar {
   min-height: 1rem;
   background: #07070a;
-  padding: 16px 0 13px 45px;
-  display: block;
+  justify-content: flex-start;
+  padding: 16px 25px 13px 45px;
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    justify-content: flex-end;
+  }
 }
 
 .burger {
@@ -105,6 +112,14 @@ a:visited {
   display: grid;
 }
 
+@media (max-width: 800px) {
+  .keyBoardSection {
+    width: 100%;
+    min-width: auto;
+    grid-template-columns: repeat(6, 2rem);
+  }
+}
+
 .keyboardButton {
   height: 3rem;
   width: 3.4rem;
@@ -129,14 +144,38 @@ a:visited {
   width: 100%;
 }
 
-.alignKeyboard {
+.cscAlign {
   grid-column-start: 2;
+}
+
+@media (max-width: 800px) {
+  .cscAlign {
+    grid-column-start: auto;
+  }
+}
+
+.derivAlign {
+  grid-column-start: auto;
+}
+
+@media (max-width: 800px) {
+  .derivAlign {
+    grid-column-start: 2;
+  }
 }
 
 .resultSection {
   width: 37%;
   min-width: 29rem;
   padding: 4rem 0 1rem;
+}
+
+@media (max-width: 800px) {
+  .resultSection {
+    width: 100%;
+    min-width: auto;
+    display: block;
+  }
 }
 
 .resultBox {

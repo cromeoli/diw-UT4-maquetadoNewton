@@ -8,8 +8,11 @@
 input
   all: unset
 
+a
+  color: variables.$colorBlacknoire
+
 a:visited
-  color: black
+  color: variables.$colorBlacknoire
 
 .mainFrame
   display: flex
@@ -25,22 +28,19 @@ a:visited
   width: 100%
 
 .navbar
-  display: block
+  display: flex
+  justify-content: flex-start
   background: variables.$colorBlacknoire
   min-height: 1rem
-  padding: 16px 0px 13px 45px
+  padding: 16px 25px 13px 45px
+  @media (max-width: 800px)
+    justify-content: flex-end
 
 .burger
   width: calc(33px + 0.2vw)
 
-.burgerContainer
-
 
 ///////////////////// Logo
-.logoSection
-
-
-
 
 .logoNewton
   color: variables.$colorMercury
@@ -100,6 +100,10 @@ a:visited
   width: 67%
   min-width: 27rem
   padding-top: 0.2rem
+  @media (max-width: 800px)
+    grid-template-columns: repeat(6,2rem)
+    width: 100%
+    min-width: auto
 
 
 .keyboardButton
@@ -124,8 +128,16 @@ a:visited
   width: 100%
 
 
-.alignKeyboard
+.cscAlign
   grid-column-start: 2
+  @media (max-width: 800px)
+    grid-column-start: auto
+
+.derivAlign
+  grid-column-start: auto
+  @media (max-width: 800px)
+    grid-column-start: 2
+
 
 
 ///////////////////// Result
@@ -135,6 +147,10 @@ a:visited
   width: 37%
   min-width: 29rem
   padding: 4rem 0px 1rem 0px
+  @media (max-width: 800px)
+    display: block
+    width: 100%
+    min-width: auto
 
 .resultBox
   display: flex
