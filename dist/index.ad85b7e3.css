@@ -44,7 +44,7 @@ a, a:visited {
   display: flex;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .navbar {
     justify-content: flex-end;
   }
@@ -64,11 +64,11 @@ a, a:visited {
 
 .inputSection {
   width: 45%;
-  min-width: calc(45rem + 2.5vh);
+  min-width: 600px;
   padding-bottom: 1.2rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .inputSection {
     width: 100%;
     min-width: auto;
@@ -101,8 +101,14 @@ a, a:visited {
   display: flex;
 }
 
+@media (max-width: 600px) {
+  .inputBarArea {
+    border-radius: 0;
+  }
+}
+
 .keyBoardSection {
-  width: 67%;
+  width: 67vw;
   min-width: 27rem;
   grid-template-columns: repeat(9, 2rem);
   justify-content: center;
@@ -112,7 +118,7 @@ a, a:visited {
   display: grid;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .keyBoardSection {
     width: 100%;
     min-width: auto;
@@ -148,7 +154,7 @@ a, a:visited {
   grid-column-start: 2;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .cscAlign {
     grid-column-start: auto;
   }
@@ -158,7 +164,7 @@ a, a:visited {
   grid-column-start: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .derivAlign {
     grid-column-start: 2;
   }
@@ -170,7 +176,7 @@ a, a:visited {
   padding: 4rem 0 1rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .resultSection {
     width: 100%;
     min-width: auto;
