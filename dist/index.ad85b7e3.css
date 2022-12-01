@@ -212,6 +212,19 @@ a, a:visited {
   position: relative;
 }
 
+.copyToClipboard {
+  width: 1.2em;
+  position: absolute;
+  bottom: 20px;
+  right: 1em;
+}
+
+@media (max-width: 600px) {
+  .copyToClipboard {
+    top: 1em;
+  }
+}
+
 .resultBoxBackground {
   background: #5e5e61;
   border-radius: 8px;
