@@ -31,6 +31,13 @@ a, a:visited {
   display: flex;
 }
 
+@media (max-width: 600px) {
+  .mainFrame {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
 .sticky {
   width: 100%;
   position: sticky;
@@ -40,7 +47,7 @@ a, a:visited {
   min-height: 1rem;
   background: #07070a;
   justify-content: flex-start;
-  padding: 16px 25px 13px 45px;
+  padding: 16px 17px 13px 45px;
   display: flex;
 }
 
@@ -62,6 +69,13 @@ a, a:visited {
   font-weight: 400;
 }
 
+@media (max-width: 600px) {
+  .logoNewton {
+    padding: 0 0 .6rem;
+    font-size: 4.7rem;
+  }
+}
+
 .inputSection {
   width: 45%;
   min-width: 600px;
@@ -72,7 +86,7 @@ a, a:visited {
   .inputSection {
     width: 100%;
     min-width: auto;
-    display: block;
+    padding: 0 1rem 1.4rem;
   }
 }
 
@@ -101,12 +115,6 @@ a, a:visited {
   display: flex;
 }
 
-@media (max-width: 600px) {
-  .inputBarArea {
-    border-radius: 0;
-  }
-}
-
 .keyBoardSection {
   width: 67vw;
   min-width: 27rem;
@@ -121,21 +129,29 @@ a, a:visited {
 @media (max-width: 600px) {
   .keyBoardSection {
     width: 100%;
-    min-width: auto;
     grid-template-columns: repeat(6, 2rem);
+    gap: .7rem 1.7rem;
   }
 }
 
 .keyboardButton {
-  height: 3rem;
+  height: 2.9rem;
   width: 3.4rem;
   background: #e9e9e9;
   border-radius: 2px;
   justify-content: center;
   align-items: center;
   font-family: LibertinusMath-Regular, serif;
-  font-size: 21px;
+  font-size: 1.4em;
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .keyboardButton {
+    height: 2em;
+    width: 2.6em;
+    font-size: 1.2em;
+  }
 }
 
 .clearButton {
@@ -180,12 +196,12 @@ a, a:visited {
   .resultSection {
     width: 100%;
     min-width: auto;
-    display: block;
+    padding: 3rem 1.5rem 0;
   }
 }
 
 .resultBox {
-  height: 20vh;
+  height: 28vh;
   width: inherit;
   background: #e9e9e9;
   border-radius: 8px;
@@ -199,7 +215,13 @@ a, a:visited {
 .resultBoxBackground {
   background: #5e5e61;
   border-radius: 8px;
-  padding: 2.2rem;
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  .resultBoxBackground {
+    padding: 1.1rem;
+  }
 }
 
 body {
