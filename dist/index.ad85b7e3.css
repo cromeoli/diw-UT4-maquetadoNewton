@@ -1,12 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap";
 @font-face {
   font-family: LibertinusMath-Regular;
-  src: url("LibertinusMath-Regular.5f51730d.otf");
+  src: url("LibertinusMath-Regular.c21b433f.otf");
 }
 
 @font-face {
   font-family: LibertinusMono-Regular;
-  src: url("LibertinusMono-Regular.94eb0bd8.otf");
+  src: url("LibertinusMath-Regular.c21b433f.otf");
 }
 
 * {
