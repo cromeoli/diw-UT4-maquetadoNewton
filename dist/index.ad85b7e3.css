@@ -20,6 +20,10 @@ input {
   all: unset;
 }
 
+body {
+  background: #131317;
+}
+
 .mainFrame {
   flex-direction: column;
   justify-content: center;
@@ -269,14 +273,124 @@ input {
   }
 }
 
-#overlayCloseArea {
+.registerOverlay {
+  height: 50vh;
+  width: 40vh;
+  z-index: 1;
+  background: #07070a;
+  border-radius: 8px;
+  flex-direction: column;
+  padding: 1.4em .7em .5em;
+  transition: display .5s ease-in;
+  display: flex;
+  position: absolute;
+  top: 6.5rem;
+  left: 3%;
+}
+
+@media (max-width: 600px) {
+  .registerOverlay {
+    top: 4rem;
+    left: 10vw;
+  }
+}
+
+.registerForm {
+  border-top: .5px solid #e9e9e9;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3em;
+  margin-top: 1em;
+  padding: 1em;
+  display: flex;
+}
+
+.formInput {
   width: 100%;
-  height: 100%;
-  opacity: .3;
-  z-index: 0;
-  background: #00f;
+  height: 3.5vh;
+  background: #e9e9e9;
+  border-radius: 4px;
+}
+
+.registerSignUpButton {
+  color: #e9e9e9;
+  background: #e9470c;
+  border-radius: 8px;
+  padding: .5rem 1.1rem;
+  font-family: Crimson Pro, serif;
+  font-size: 1em;
+  transition: all .5s;
+}
+
+.registerSignUpButton:hover {
+  color: #07070a;
+  background: #eebc98;
+}
+
+.continueWithButtons {
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  display: flex;
+}
+
+.continueButton:hover {
+  color: #07070a;
+  background: #eebc98;
+  border-color: #eebc98;
+}
+
+.continueButton {
+  width: 80%;
+  color: #e9e9e9;
+  border: .1em solid #e9470c;
+  border-radius: 9px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  transition: all .5s;
+  display: flex;
+}
+
+.continueImg {
+  padding-right: 5px;
+}
+
+.guestOverlay {
+  height: 9vh;
+  width: 40vh;
+  background: #07070a;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1.2rem;
+  transition: all .5s;
   display: none;
   position: absolute;
+  top: 5.5rem;
+  left: 3%;
+}
+
+.signUpButton {
+  color: #e9e9e9;
+  background: #e9470c;
+  border-radius: 8px;
+  padding: .5rem 1.8rem;
+  font-family: Crimson Pro, serif;
+  font-size: 1.7em;
+}
+
+.logInButton {
+  color: #e9e9e9;
+  border-radius: 8px;
+  padding: .6rem 1.8rem;
+  font-family: Crimson Pro, serif;
+  font-size: 1.7em;
+}
+
+.logInButton:hover, .signUpButton:hover {
+  color: #07070a;
+  background: #eebc98;
 }
 
 .overlay {
@@ -286,7 +400,7 @@ input {
   background: #07070a;
   border-radius: 8px;
   flex-direction: column;
-  transition: all .5s;
+  transition: display .5s ease-in;
   display: none;
   position: absolute;
   top: 6.5rem;
@@ -330,8 +444,14 @@ input {
   background: #e9470c;
 }
 
-body {
-  background: #131317;
+.overlayCloseArea {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  transition: display .5s ease-in;
+  display: none;
+  position: absolute;
 }
 
 /*# sourceMappingURL=index.ad85b7e3.css.map */

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newton</title>
     <link rel="stylesheet" href="assets/sass/main.sass">
-
+    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
         <!-- Navbar -->
     <header>
         <nav class="navbar sticky">
-            <a href="#" class="burger">
+            <a href="#" id="burger" class="burger">
                 <img src="assets/img/Burger.svg" class="burgerIcon">
             </a>
         </nav>
@@ -77,7 +77,9 @@
                     </div>
                 </div>
         </section>
-        <div id="overlayCloseArea">
+
+        <!-- Overlays -->
+        <div class="overlayCloseArea">
 
         </div>
         <div class="overlay">
@@ -85,6 +87,35 @@
             <a href="#" class="overlayButton1">My account</a>
             <a href="#" class="overlayButton2">Donate</a>
             <a href="#" class="overlayButton3">About</a>
+        </div>
+
+        <div class="guestOverlay">
+            <a href="#" class="signUpButton">Sign Up</a>
+            <a href="#" class="logInButton">Log In</a>
+        </div>
+
+        <div class="registerOverlay">
+            <div class="continueWithButtons">
+                <a href="#" class="continueButton">
+                    <img src="assets/img/apple.svg" class="continueImg">
+                    Continue with Google
+                </a>
+                <a href="#" class="continueButton">
+                    <img src="assets/img/google.png"class="continueImg">
+                    Continue with Apple
+                </a>
+            </div>
+
+            <form class="registerForm">
+                <input class="formInput" placeholder="Register email">
+                <input class="formInput" placeholder="Username">
+                <input class="formInput" type="password" placeholder="Password">
+                <input class="formInput" type="password" placeholder="Confirm password">
+                <a href="#" class="registerSignUpButton">
+                    Sign up
+                </a>
+
+            </form>
         </div>
     </main>
 

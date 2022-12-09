@@ -211,19 +211,127 @@
     padding: 1.1rem
 
 
-///////////////////// Overlay Menu
+///////////////////// Overlay Menus
+
+// Login Overlay
+.loginOverlay
 
 
-#overlayCloseArea
-  display: none
+// Register Overlay
+.registerOverlay
+  display: flex
+  flex-direction: column
   position: absolute
+  top: 6.5rem
+  left: 3%
+  height: 50vh
+  width: 40vh
+  transition: display 500ms ease-in
+  background: $colorBlacknoire
+  border-radius: 8px
+  padding: 1.4em 0.7em 0.5em 0.7em
+  z-index: 1
+  @media (max-width: $mediaQuerySize)
+    left: 10vw
+    top: 4rem
+
+.registerForm
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 1.3em
+  border-top: $colorMercury
+  border-top-width: 0.5px
+  border-top-style: solid
+  padding: 1em
+  margin-top: 1em
+
+.formInput
   width: 100%
-  height: 100%
-  background: blue
-  opacity: 30%
-  z-index: 0
+  height: 3.5vh
+  background: $colorMercury
+  border-radius: 4px
+
+.registerSignUpButton
+  padding: 0.5rem 1.1rem 0.5rem 1.1rem
+  color: $colorMercury
+  font-family: $fontCrimsonPro
+  font-size: 1em
+  background: $colorRZB
+  border-radius: 8px
+  transition: 0.5s
+
+.registerSignUpButton:hover
+  color: $colorBlacknoire
+  background: $colorFadedOrange
+
+.continueWithButtons
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 1em
 
 
+.continueButton:hover
+  color: $colorBlacknoire
+  background: $colorFadedOrange
+  border-color: $colorFadedOrange
+
+
+.continueButton
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 80%
+  color: $colorMercury
+  padding: 1em
+  border: 0.10em solid $colorRZB
+  border-radius: 9px
+  transition: 0.5s
+
+.continueImg
+  padding-right: 5px
+
+// Guest overlay
+.guestOverlay
+  display: none
+  justify-content: space-around
+  align-items: center
+  position: absolute
+  transition: 0.5s
+  top: 5.5rem
+  left: 3%
+  height: 9vh
+  width: 40vh
+  padding: 0 1.2rem 0 1.2rem
+  border-radius: 8px
+  background: $colorBlacknoire
+
+.signUpButton
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem
+  color: $colorMercury
+  font-family: $fontCrimsonPro
+  font-size: 1.7em
+  background: $colorRZB
+  border-radius: 8px
+
+.logInButton
+  padding: 0.6rem 1.8rem 0.6rem 1.8rem
+  color: $colorMercury
+  font-family: $fontCrimsonPro
+  font-size: 1.7em
+  border-radius: 8px
+
+.logInButton:hover
+  color: $colorBlacknoire
+  background: $colorFadedOrange
+
+.signUpButton:hover
+  color: $colorBlacknoire
+  background: $colorFadedOrange
+
+
+// Menu overlay
 .overlay
   display: none
   flex-direction: column
@@ -232,7 +340,7 @@
   left: 3%
   height: 50vh
   width: 40vh
-  transition: 0.5s
+  transition: display 500ms ease-in
   background: $colorBlacknoire
   border-radius: 8px
   z-index: 1
@@ -279,11 +387,18 @@
   color: $colorBlacknoire
   background: $colorRZB
 
+// Close area
+.overlayCloseArea
+  display: none
+  position: absolute
+  width: 100%
+  height: 100%
+  opacity: 0
+  transition: display 0.5s ease-in
+  z-index: 0
+
 
 ///////////////////////////////
-
-body
-  background: $colorLack
 
 
 
