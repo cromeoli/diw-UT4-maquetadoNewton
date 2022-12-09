@@ -65,6 +65,8 @@
   min-width: $mediaQuerySize
   padding-bottom: 1.2rem
   font-size: 1.5rem
+  font-weight: lighter
+  font-family: $fontLibMono
   @media (max-width: $mediaQuerySize)
     padding: 0 1rem 1.4rem 1rem
     width: 100%
@@ -78,6 +80,7 @@
   border-radius: 8px
   height: inherit
   width: 100%
+  text-indent: 10px
 
 .equal
   height: calc(100% - 0.9rem)
@@ -186,6 +189,8 @@
   width: inherit
   padding: 2rem
   border-radius: 8px
+  font-family: $fontLibMono
+  font-size: 1.4em
   background: $colorMercury
 
 .copyToClipboard
@@ -244,13 +249,14 @@
   border-top-width: 0.5px
   border-top-style: solid
   padding: 1em
-  margin-top: 1em
+  margin-top: 0.5em
 
-.formInput
+.formInputBox
   width: 100%
   height: 3.5vh
   background: $colorMercury
   border-radius: 4px
+  text-indent: 10px
 
 .registerSignUpButton
   padding: 0.5rem 1.1rem 0.5rem 1.1rem
@@ -283,6 +289,7 @@
   justify-content: center
   align-items: center
   width: 80%
+  height: 40%
   color: $colorMercury
   padding: 1em
   border: 0.10em solid $colorRZB
@@ -393,7 +400,8 @@
   position: absolute
   width: 100%
   height: 100%
-  opacity: 0
+  opacity: 20%
+  background: $colorBlacknoire
   transition: display 0.5s ease-in
   z-index: 0
 
