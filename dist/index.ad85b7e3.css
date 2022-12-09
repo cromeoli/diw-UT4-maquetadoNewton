@@ -278,6 +278,28 @@ body {
   }
 }
 
+.loginOverlay {
+  height: 40vh;
+  width: 40vh;
+  z-index: 1;
+  background: #07070a;
+  border-radius: 8px;
+  flex-direction: column;
+  padding: 2.1em .7em .5em;
+  transition: display .5s ease-in;
+  display: none;
+  position: absolute;
+  top: 6.5rem;
+  left: 3%;
+}
+
+@media (max-width: 600px) {
+  .loginOverlay {
+    top: 4rem;
+    left: 10vw;
+  }
+}
+
 .registerOverlay {
   height: 50vh;
   width: 40vh;
@@ -287,7 +309,7 @@ body {
   flex-direction: column;
   padding: 1.4em .7em .5em;
   transition: display .5s ease-in;
-  display: flex;
+  display: none;
   position: absolute;
   top: 6.5rem;
   left: 3%;
@@ -400,7 +422,7 @@ body {
   background: #eebc98;
 }
 
-.overlay {
+.homeOverlay {
   height: 50vh;
   width: 40vh;
   z-index: 1;
@@ -415,7 +437,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .overlay {
+  .homeOverlay {
     top: 4rem;
     left: 10vw;
   }

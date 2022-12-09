@@ -82,7 +82,7 @@
         <div class="overlayCloseArea">
 
         </div>
-        <div class="overlay">
+        <div class="homeOverlay">
             <img src="/Avatar.1c82c2e7.png" class="avatar">
             <a href="#" class="overlayButton1">My account</a>
             <a href="#" class="overlayButton2">Donate</a>
@@ -90,11 +90,34 @@
         </div>
 
         <div class="guestOverlay">
-            <a href="#" class="signUpButton">Sign Up</a>
-            <a href="#" class="logInButton">Log In</a>
+            <a href="#" id="signUpButton" class="signUpButton">Sign Up</a>
+            <a href="#" id="logInButton" class="logInButton">Log In</a>
         </div>
 
         <div class="registerOverlay">
+            <div class="continueWithButtons">
+                <a href="#" class="continueButton">
+                    <img src="/apple.266392cf.svg" class="continueImg">
+                    Register with Google
+                </a>
+                <a href="#" class="continueButton">
+                    <img src="/google.ceee7de9.png" class="continueImg">
+                    Register with Apple
+                </a>
+            </div>
+
+            <form class="registerForm">
+                <input class="formInputBox" placeholder="Register email">
+                <input class="formInputBox" placeholder="Username">
+                <input class="formInputBox" type="password" placeholder="Password">
+                <input class="formInputBox" type="password" placeholder="Confirm password">
+                <a href="#" class="registerSignUpButton">
+                    Sign up
+                </a>
+            </form>
+        </div>
+
+        <div class="loginOverlay">
             <div class="continueWithButtons">
                 <a href="#" class="continueButton">
                     <img src="/apple.266392cf.svg" class="continueImg">
@@ -107,15 +130,13 @@
             </div>
 
             <form class="registerForm">
-                <input class="formInputBox" placeholder="Register email">
                 <input class="formInputBox" placeholder="Username">
                 <input class="formInputBox" type="password" placeholder="Password">
-                <input class="formInputBox" type="password" placeholder="Confirm password">
                 <a href="#" class="registerSignUpButton">
-                    Sign up
+                    Log in
                 </a>
-
             </form>
+
         </div>
     </main>
 

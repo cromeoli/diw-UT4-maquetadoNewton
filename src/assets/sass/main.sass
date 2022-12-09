@@ -200,7 +200,6 @@
   bottom: 20px
   @media (max-width: $mediaQuerySize)
 
-
 .copyToClipboardImg
   height: 100%
   width: 100%
@@ -219,12 +218,26 @@
 ///////////////////// Overlay Menus
 
 // Login Overlay
-.loginOverlay
-
+.loginOverlay //Main
+  display: none
+  flex-direction: column
+  position: absolute
+  top: 6.5rem
+  left: 3%
+  height: 40vh
+  width: 40vh
+  transition: display 500ms ease-in
+  background: $colorBlacknoire
+  border-radius: 8px
+  padding: 2.1em 0.7em 0.5em 0.7em
+  z-index: 1
+  @media (max-width: $mediaQuerySize)
+    left: 10vw
+    top: 4rem
 
 // Register Overlay
-.registerOverlay
-  display: flex
+.registerOverlay //Main
+  display: none
   flex-direction: column
   position: absolute
   top: 6.5rem
@@ -339,7 +352,7 @@
 
 
 // Menu overlay
-.overlay
+.homeOverlay
   display: none
   flex-direction: column
   position: absolute
