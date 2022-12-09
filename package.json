@@ -10,7 +10,7 @@
     "build": "npm-run-all cleanparcel:build"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.7.0",
+    "@parcel/transformer-sass": "^2.8.0",
     "parcel": "^2.7.0"
   },
   "dependencies": {
