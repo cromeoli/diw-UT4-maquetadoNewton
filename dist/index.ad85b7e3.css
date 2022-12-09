@@ -120,6 +120,7 @@ body {
 
 .equalImg {
   height: 100%;
+  transition: all 2s;
 }
 
 .equalImg:hover {
@@ -453,8 +454,8 @@ body {
 .overlayButton1, .overlayButton2, .overlayButton3 {
   color: #e9e9e9;
   background: #07070a;
-  padding: 1.5rem;
-  font-size: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  font-size: 1.3em;
   transition: all .4s;
 }
 
@@ -476,9 +477,8 @@ body {
 .overlayCloseArea {
   width: 100%;
   height: 100%;
-  opacity: .2;
+  opacity: 0;
   z-index: 0;
-  background: #07070a;
   transition: display .5s ease-in;
   display: none;
   position: absolute;

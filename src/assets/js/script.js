@@ -1,15 +1,21 @@
 let burgerButton = document.getElementById("burger")
 let logInButton = document.getElementById("logInButton")
 let signUpButton = document.getElementById("signUpButton")
+let formSignUp = document.getElementById("formSignUp")
+let formLogIn = document.getElementById("formLogIn")
 let overlayCloseArea = document.querySelector('.overlayCloseArea')
 
 
 function openHome(){
     let homeOverlay = document.querySelector('.homeOverlay')
     let overlayClose = document.querySelector('.overlayCloseArea')
+    let registerOverlay = document.querySelector('.registerOverlay')
+    let loginOverlay = document.querySelector('.loginOverlay')
 
     homeOverlay.style.display = "flex"
     overlayClose.style.display = "flex"
+    registerOverlay.style.display = "none"
+    loginOverlay.style.display = "none"
 }
 
 function openGuest(){
@@ -59,3 +65,5 @@ overlayCloseArea.addEventListener("click", closeOverlay)
 burgerButton.addEventListener("click", openGuest)
 logInButton.addEventListener('click', openLogin)
 signUpButton.addEventListener('click', openRegister)
+formSignUp.addEventListener('click', openHome)
+formLogIn.addEventListener('click', openHome)
