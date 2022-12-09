@@ -20,10 +20,6 @@ input {
   all: unset;
 }
 
-a, a:visited {
-  color: #07070a;
-}
-
 .mainFrame {
   flex-direction: column;
   justify-content: center;
@@ -59,7 +55,6 @@ a, a:visited {
 
 .burger {
   width: 2rem;
-  opacity: 1;
 }
 
 .burgerIcon {
@@ -120,6 +115,10 @@ a, a:visited {
   height: 100%;
 }
 
+.equalImg:hover {
+  content: url("hoverEqual.aec0bcf0.svg");
+}
+
 .inputBarArea {
   height: 3.4rem;
   width: 100%;
@@ -150,6 +149,7 @@ a, a:visited {
 }
 
 .keyboardButton {
+  color: #07070a;
   height: 2.9rem;
   width: 3.4rem;
   background: #e9e9e9;
@@ -172,6 +172,10 @@ a, a:visited {
 
 .keyboardButton:hover {
   background: #f19675;
+}
+
+.keyboardButton:visited {
+  color: #07070a;
 }
 
 .clearButton {
@@ -244,10 +248,13 @@ a, a:visited {
   right: 1em;
 }
 
-@media (max-width: 600px) {
-  .copyToClipboard {
-    top: 1em;
-  }
+.copyToClipboardImg {
+  height: 100%;
+  width: 100%;
+}
+
+.copyToClipboardImg:hover {
+  content: url("hoverClipboard.ee8be18b.svg");
 }
 
 .resultBoxBackground {
@@ -262,22 +269,34 @@ a, a:visited {
   }
 }
 
+#overlayCloseArea {
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  z-index: 0;
+  background: #00f;
+  display: none;
+  position: absolute;
+}
+
 .overlay {
   height: 50vh;
   width: 40vh;
+  z-index: 1;
   background: #07070a;
   border-radius: 8px;
   flex-direction: column;
   transition: all .5s;
-  display: flex;
+  display: none;
   position: absolute;
-  top: 5rem;
+  top: 6.5rem;
   left: 3%;
 }
 
 @media (max-width: 600px) {
   .overlay {
-    right: 0;
+    top: 4rem;
+    left: 10vw;
   }
 }
 

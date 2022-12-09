@@ -34,8 +34,6 @@
 
 .burger
   width: 2rem
-  opacity: 1
-
 
 .burgerIcon
   width: 100%
@@ -62,9 +60,6 @@
 
 ///////////////////// inputArea
 
-//@media (max-width: 706px)
-    lo que pasa cuando supera el tamaño
-
 .inputSection
   width: 45%
   min-width: $mediaQuerySize
@@ -89,6 +84,9 @@
 
 .equalImg
   height: 100%
+
+.equalImg:hover
+  content: url("../img/hoverEqual.svg")
 
 .inputBarArea
   display: flex
@@ -123,6 +121,7 @@
   display: flex
   justify-content: center
   align-items: center
+  color: $colorBlacknoire
   font-family: $fontLibMath
   font-size: 1.4em
   height: 2.9rem
@@ -137,6 +136,9 @@
 
 .keyboardButton:hover
   background: $colorClearOrange
+
+.keyboardButton:visited
+  color: $colorBlacknoire
 
 .clearButton
   height: 100%
@@ -165,7 +167,6 @@
 
 
 ///////////////////// Result
-//Media queries para ajustar a los bordes de la pantalla
 
 .resultSection
   width: 37%
@@ -193,7 +194,14 @@
   right: 1em
   bottom: 20px
   @media (max-width: $mediaQuerySize)
-    top: 1em
+
+
+.copyToClipboardImg
+  height: 100%
+  width: 100%
+
+.copyToClipboardImg:hover
+  content: url("../img/hoverClipboard.svg")
 
 .resultBoxBackground
   padding: 2rem
@@ -205,21 +213,32 @@
 
 ///////////////////// Overlay Menu
 
-.overlayCloseArea
+
+#overlayCloseArea
+  display: none
+  position: absolute
+  width: 100%
+  height: 100%
+  background: blue
+  opacity: 30%
+  z-index: 0
+
 
 .overlay
-  display: flex
+  display: none
   flex-direction: column
   position: absolute
-  top: 5rem
+  top: 6.5rem
   left: 3%
   height: 50vh
   width: 40vh
   transition: 0.5s
   background: $colorBlacknoire
   border-radius: 8px
+  z-index: 1
   @media (max-width: $mediaQuerySize)
-    right: 0
+    left: 10vw
+    top: 4rem
 
 .avatar
   padding: 2rem
