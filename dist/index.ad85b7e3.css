@@ -70,6 +70,8 @@ body {
 
 .burgerIcon:hover {
   content: url("hoverBurger.cf5128eb.svg");
+  animation: .5s linear svgFade;
+  rotate: 90deg;
 }
 
 .bringBackNewton {
@@ -78,7 +80,6 @@ body {
   font-family: Crimson Pro, serif;
   font-size: 2.3em;
   font-weight: 400;
-  transition: all .5s;
 }
 
 .bringBackNewton:hover {
@@ -86,6 +87,17 @@ body {
   background-image: linear-gradient(#e9e9e9, #e9470c);
   -webkit-background-clip: text;
   background-clip: text;
+  transition: all .5s;
+}
+
+@keyframes svgFade {
+  0% {
+    rotate: none;
+  }
+
+  100% {
+    rotate: 90deg;
+  }
 }
 
 .inputSection {
@@ -457,7 +469,7 @@ body {
   display: flex;
 }
 
-.accountArea {
+.profileArea {
   box-sizing: border-box;
   min-height: auto;
   height: 100%;
@@ -469,6 +481,20 @@ body {
   align-items: center;
   padding: 2em;
   display: flex;
+}
+
+.securityArea, .paymentsArea, .settingsArea {
+  box-sizing: border-box;
+  min-height: auto;
+  height: 100%;
+  width: 100%;
+  background: #07070a;
+  border-radius: 10px;
+  flex-direction: column;
+  grid-area: 1 / 2 / 2 / 3;
+  align-items: center;
+  padding: 2em;
+  display: none;
 }
 
 .accountMenuButton {
@@ -520,9 +546,10 @@ body {
   color: #e9e9e9;
   border-bottom: 1px solid #e9470c;
   align-self: flex-end;
-  padding-right: 1.5em;
+  padding-left: 1.5em;
   font-family: Crimson Pro, serif;
   font-weight: 400;
+  transition: all .5s;
 }
 
 .userDataForm {
@@ -531,6 +558,14 @@ body {
   font-family: LibertinusMath-Regular, serif;
   font-size: 1.2rem;
   display: flex;
+}
+
+#profile {
+  background: #e9470c;
+}
+
+#security, #payment, #settings {
+  background: #131317;
 }
 
 .accountMain {

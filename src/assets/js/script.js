@@ -1,5 +1,4 @@
 let burgerButton = document.getElementById("burger")
-let burgerAccountButton = document.getElementById("burgerAccount")
 let logInButton = document.getElementById("logInButton")
 let signUpButton = document.getElementById("signUpButton")
 let formSignUp = document.getElementById("formSignUp")

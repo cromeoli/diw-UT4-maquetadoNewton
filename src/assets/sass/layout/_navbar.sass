@@ -22,7 +22,9 @@
   transition: 0.5s
 
 .burgerIcon:hover
+  animation: svgFade 0.5s linear
   content: url("../img/hoverBurger.svg")
+  rotate: 90deg
 
 .bringBackNewton
   color: $colorMercury
@@ -30,9 +32,15 @@
   font-weight: 400
   font-size: 2.3em
   margin: auto
-  transition: 0.5s
 
 .bringBackNewton:hover
   background-image: linear-gradient($colorMercury, $colorRZB)
   background-clip: text
   color: transparent
+  transition: 0.5s
+
+@keyframes svgFade
+  0%
+    rotate: 0deg
+  100%
+    rotate: 90deg

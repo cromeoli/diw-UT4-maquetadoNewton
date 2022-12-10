@@ -6,6 +6,7 @@
   <title>Newton</title>
   <link rel="stylesheet" href="assets/sass/main.sass">
   <script defer src="assets/js/script.js"></script>
+  <script defer src="assets/js/accountScript.js"></script>
 </head>
 <body>
 <!-- Navbar -->
@@ -22,14 +23,17 @@
 
   <!-- Main menu -->
   <div class="board">
-    <div class="accountMenu">
-      <a href="#" class="accountMenuButton">Profile</a>
-      <a href="#" class="accountMenuButton">Security</a>
-      <a href="#" class="accountMenuButton">Payment Methods</a>
-      <a href="#" class="accountMenuButton">Settings</a>
-    </div>
-    <div class="accountArea">
-      <h1 class="profileTitle">Profile</h1>
+
+    <section class="accountMenu">
+      <a href="#" id="profile" class="accountMenuButton">Profile</a>
+      <a href="#" id="security" class="accountMenuButton">Security</a>
+      <a href="#" id="payment" class="accountMenuButton">Payment Methods</a>
+      <a href="#" id="settings" class="accountMenuButton">Settings</a>
+    </section>
+
+    <!-- Perfil -->
+    <section class="profileArea">
+      <h1 class="profileTitle">My Profile</h1>
       <img src="assets/img/Avatar.png" class="accountAvatar">
 
       <form class="userDataForm">
@@ -66,8 +70,136 @@
         </a>
       </span>
 
-    </div>
+    </section>
+
+    <!-- Security -->
+
+    <section class="securityArea">
+      <h1 class="profileTitle">Security</h1>
+      <img src="assets/img/Avatar.png" class="accountAvatar">
+
+      <form class="userDataForm">
+        <label>
+          Username
+          <input value="Christian" class="formInputBox">
+        </label>
+        <label>
+          Password
+          <input type="password" value="pestillo" class="formInputBox">
+        </label>
+        <label>
+          Associed account
+          <input value="cromoli1808@gmail.com" class="formInputBox">
+        </label>
+        <label>
+          Phone
+          <input value="777 777 777" class="formInputBox">
+        </label>
+      </form>
+
+      <span class="accountSocial">
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/Twitter.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/Instagram.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/github.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/+.svg">
+        </a>
+      </span>
+
+    </section>
+
+    <!-- Payments -->
+
+    <section class="settingsArea">
+      <h1 class="profileTitle">Settings</h1>
+      <img src="assets/img/Avatar.png" class="accountAvatar">
+
+      <form class="userDataForm">
+        <label>
+          Username
+          <input value="Christian" class="formInputBox">
+        </label>
+        <label>
+          Password
+          <input type="password" value="pestillo" class="formInputBox">
+        </label>
+        <label>
+          Associed account
+          <input value="cromoli1808@gmail.com" class="formInputBox">
+        </label>
+        <label>
+          Phone
+          <input value="777 777 777" class="formInputBox">
+        </label>
+      </form>
+
+      <span class="accountSocial">
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/Twitter.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/Instagram.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/github.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/+.svg">
+        </a>
+      </span>
+
+    </section>
+
+    <!-- Settings -->
+    <section class="paymentsArea">
+      <h1 class="profileTitle">Payments</h1>
+      <img src="assets/img/Avatar.png" class="accountAvatar">
+
+      <form class="userDataForm">
+        <label>
+          Username
+          <input value="Christian" class="formInputBox">
+        </label>
+        <label>
+          Password
+          <input type="password" value="pestillo" class="formInputBox">
+        </label>
+        <label>
+          Associed account
+          <input value="cromoli1808@gmail.com" class="formInputBox">
+        </label>
+        <label>
+          Phone
+          <input value="777 777 777" class="formInputBox">
+        </label>
+      </form>
+
+      <span class="accountSocial">
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/Twitter.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/Instagram.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/github.svg">
+        </a>
+        <a href="#" class="mediaIcon">
+          <img src="assets/img/+.svg">
+        </a>
+      </span>
+
+    </section>
   </div>
+
+
+
 
 
 

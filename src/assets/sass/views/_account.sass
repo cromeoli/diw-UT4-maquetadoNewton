@@ -25,7 +25,7 @@
 
   grid-area: 1 / 1 / 2 / 2
 
-.accountArea
+.profileArea
   display: flex
   box-sizing: border-box
   flex-direction: column
@@ -36,6 +36,47 @@
   width: 100%
   padding: 2em
 
+  background: $colorBlacknoire
+  grid-area: 1 / 2 / 2 / 3
+
+.securityArea
+  display: none
+  box-sizing: border-box
+  flex-direction: column
+  align-items: center
+  border-radius: 10px
+  min-height: auto
+  height: 100%
+  width: 100%
+  padding: 2em
+
+  background: $colorBlacknoire
+  grid-area: 1 / 2 / 2 / 3
+
+.paymentsArea
+  display: none
+  box-sizing: border-box
+  flex-direction: column
+  align-items: center
+  border-radius: 10px
+  min-height: auto
+  height: 100%
+  width: 100%
+  padding: 2em
+
+  background: $colorBlacknoire
+  grid-area: 1 / 2 / 2 / 3
+
+.settingsArea
+  display: none
+  box-sizing: border-box
+  flex-direction: column
+  align-items: center
+  border-radius: 10px
+  min-height: auto
+  height: 100%
+  width: 100%
+  padding: 2em
   background: $colorBlacknoire
   grid-area: 1 / 2 / 2 / 3
 
@@ -81,10 +122,11 @@
 .profileTitle
   align-self: flex-end
   font-family: $fontCrimsonPro
-  padding-right: 1.5em
+  padding-left: 1.5em
   color: $colorMercury
   font-weight: 400
   border-bottom: $colorRZB 1px solid
+  transition: 0.5s
 
 .userDataForm
   display: flex
@@ -92,3 +134,17 @@
   gap: 40%
   font-family: $fontLibMath
   font-size: 1.2rem
+
+// Manejar sesión activa, voy rellenando con JS en función de la vista activa
+
+#profile
+  background: #E9470C
+
+#security
+  background: #131317
+
+#payment
+  background: #131317
+
+#settings
+  background: #131317
