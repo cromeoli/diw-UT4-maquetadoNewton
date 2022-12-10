@@ -285,6 +285,7 @@ body {
 .guestOverlay {
   height: 9vh;
   width: 40vh;
+  opacity: 0;
   background: #07070a;
   border-radius: 8px;
   justify-content: space-around;
@@ -297,37 +298,16 @@ body {
   left: 3%;
 }
 
-.signUpButton {
-  color: #e9e9e9;
-  background: #e9470c;
-  border-radius: 8px;
-  padding: .5rem 1.8rem;
-  font-family: Crimson Pro, serif;
-  font-size: 1.7em;
-}
-
-.logInButton {
-  color: #e9e9e9;
-  border-radius: 8px;
-  padding: .5rem 1.8rem;
-  font-family: Crimson Pro, serif;
-  font-size: 1.7em;
-}
-
-.logInButton:hover, .signUpButton:hover {
-  color: #07070a;
-  background: #eebc98;
-}
-
 .loginOverlay {
   height: 44vh;
   width: 40vh;
+  opacity: 0;
   z-index: 1;
   background: #07070a;
   border-radius: 8px;
   flex-direction: column;
   padding: 1.8em .7em .5em;
-  transition: display .5s ease-in;
+  transition: all .5s;
   display: none;
   position: absolute;
   top: 6.5rem;
@@ -342,14 +322,15 @@ body {
 }
 
 .registerOverlay {
-  height: 55vh;
+  height: 31.5rem;
   width: 40vh;
+  transition: 0;
+  opacity: 0;
   z-index: 1;
   background: #07070a;
   border-radius: 8px;
   flex-direction: column;
   padding: 1.4em .7em .5em;
-  transition: display .5s ease-in;
   display: none;
   position: absolute;
   top: 6.5rem;
@@ -374,56 +355,6 @@ body {
   display: flex;
 }
 
-.formInputBox {
-  width: 100%;
-  height: 3.5vh;
-  text-indent: 10px;
-  background: #e9e9e9;
-  border-radius: 4px;
-}
-
-.registerSignUpButton {
-  color: #e9e9e9;
-  background: #e9470c;
-  border-radius: 8px;
-  padding: .5rem 1.1rem;
-  font-family: Crimson Pro, serif;
-  font-size: 1em;
-  transition: all .5s;
-}
-
-.registerSignUpButton:hover {
-  color: #07070a;
-  background: #eebc98;
-}
-
-.continueWithButtons {
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-  display: flex;
-}
-
-.continueButton:hover {
-  color: #07070a;
-  background: #eebc98;
-  border-color: #eebc98;
-}
-
-.continueButton {
-  width: 80%;
-  height: 40%;
-  color: #e9e9e9;
-  border: .1em solid #e9470c;
-  border-radius: 9px;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  font-size: 1.3em;
-  transition: all .5s;
-  display: flex;
-}
-
 .continueImg {
   padding-right: 5px;
 }
@@ -431,11 +362,12 @@ body {
 .homeOverlay {
   height: 50vh;
   width: 40vh;
+  opacity: 0;
   z-index: 1;
   background: #07070a;
   border-radius: 8px;
   flex-direction: column;
-  transition: display .5s ease-in;
+  transition: all .5s;
   display: none;
   position: absolute;
   top: 6.5rem;
@@ -484,16 +416,16 @@ body {
   height: 100%;
   opacity: 0;
   z-index: 0;
-  transition: display .5s ease-in;
+  transition: all .5s;
   display: none;
   position: absolute;
 }
 
 .board {
-  height: 80%;
+  height: 83%;
   width: 60%;
   min-width: auto;
-  background: coral;
+  background: #07070a;
   border-radius: 10px;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 3fr;
@@ -514,37 +446,43 @@ body {
 
 .accountMenu {
   height: 45%;
-  background: red;
+  background: #131317;
   border-radius: 10px;
   flex-direction: column;
   grid-area: 1 / 1 / 2 / 2;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+  margin-left: 2em;
   display: flex;
 }
 
 .accountArea {
-  background: #6495ed;
+  box-sizing: border-box;
+  min-height: auto;
+  height: 100%;
+  width: 100%;
+  background: #07070a;
   border-radius: 10px;
   flex-direction: column;
   grid-area: 1 / 2 / 2 / 3;
   align-items: center;
-  gap: 1.5rem;
-  padding: 4rem 12rem;
+  padding: 2em;
   display: flex;
 }
 
 .accountMenuButton {
   width: 100%;
-  background: #00f;
+  color: #e9e9e9;
+  background: #131317;
   padding: 1rem;
-  font-size: 1.4em;
+  font-family: Crimson Pro, serif;
+  font-size: 1.6em;
   transition: all .5s;
 }
 
 .accountMenuButton:hover {
-  background: #7fffd4;
+  background: #e9470c;
 }
 
 .accountAvatar {
@@ -553,15 +491,51 @@ body {
 }
 
 .accountSocial {
-  height: 3rem;
-  width: 100%;
-  background: #00f;
+  height: 5rem;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  gap: .7em;
+  margin-top: 1.5em;
+  display: flex;
+}
+
+.mediaIcon {
+  height: 4rem;
+  width: 4rem;
+  background: #e9470c;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  transition: all .3s;
+  display: flex;
+}
+
+.mediaIcon:hover {
+  background: #eebc98;
+}
+
+.profileTitle {
+  color: #e9e9e9;
+  border-bottom: 1px solid #e9470c;
+  align-self: flex-end;
+  padding-right: 1.5em;
+  font-family: Crimson Pro, serif;
+  font-weight: 400;
+}
+
+.userDataForm {
+  flex-direction: column;
+  gap: 40%;
+  font-family: LibertinusMath-Regular, serif;
+  font-size: 1.2rem;
+  display: flex;
 }
 
 .accountMain {
   width: 100%;
-  height: 90vh;
-  background: #adff2f;
+  height: 84vh;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -571,6 +545,92 @@ body {
   .accountMain {
     flex-direction: column;
   }
+}
+
+.formInputBox {
+  width: 100%;
+  height: 3.5vh;
+  text-indent: 10px;
+  background: #e9e9e9;
+  border-radius: 4px;
+  font-family: LibertinusMath-Regular, serif;
+  transition: all .5s;
+}
+
+.formInputBox:hover {
+  cursor: text;
+}
+
+.formInputBox:focus {
+  color: #e9e9e9;
+  background: #07070a;
+  border-width: 1px;
+  border-color: #e9470c;
+  box-shadow: 0 0 3px #e9470c;
+}
+
+.registerSignUpButton {
+  color: #e9e9e9;
+  background: #e9470c;
+  border-radius: 8px;
+  padding: .5rem 1.1rem;
+  font-family: Crimson Pro, serif;
+  font-size: 1em;
+  transition: all .5s;
+}
+
+.registerSignUpButton:hover {
+  color: #07070a;
+  background: #eebc98;
+}
+
+.continueWithButtons {
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  display: flex;
+}
+
+.continueButton:hover {
+  color: #07070a;
+  background: #eebc98;
+  border-color: #eebc98;
+}
+
+.continueButton {
+  width: 80%;
+  height: 40%;
+  color: #e9e9e9;
+  border: .1em solid #e9470c;
+  border-radius: 9px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-size: 1.3em;
+  transition: all .5s;
+  display: flex;
+}
+
+.signUpButton {
+  color: #e9e9e9;
+  background: #e9470c;
+  border-radius: 8px;
+  padding: .5rem 1.8rem;
+  font-family: Crimson Pro, serif;
+  font-size: 1.7em;
+}
+
+.logInButton {
+  color: #e9e9e9;
+  border-radius: 8px;
+  padding: .5rem 1.8rem;
+  font-family: Crimson Pro, serif;
+  font-size: 1.7em;
+}
+
+.logInButton:hover, .signUpButton:hover {
+  color: #07070a;
+  background: #eebc98;
 }
 
 .logoNewton {

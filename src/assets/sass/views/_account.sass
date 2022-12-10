@@ -2,10 +2,10 @@
   display: grid
   grid-template-columns: 1fr 3fr
   grid-template-rows: 1fr
-  height: 80%
+  height: 83%
   width: 60%
   min-width: auto
-  background: coral
+  background: $colorBlacknoire
   border-radius: 10px
   @media (max-width: 1600px)
     width: 60rem
@@ -20,36 +20,75 @@
   border-radius: 10px
   height: 45%
   margin-top: 3rem
-  background: red
+  margin-left: 2em
+  background: $colorLack
 
   grid-area: 1 / 1 / 2 / 2
 
 .accountArea
   display: flex
+  box-sizing: border-box
   flex-direction: column
   align-items: center
-  gap: 1.5rem
   border-radius: 10px
-  padding: 4rem 12rem 4rem 12rem
+  min-height: auto
+  height: 100%
+  width: 100%
+  padding: 2em
 
-  background: cornflowerblue
+  background: $colorBlacknoire
   grid-area: 1 / 2 / 2 / 3
 
 .accountMenuButton
   padding: 1rem
   width: 100%
-  font-size: 1.4em
-  background: blue
+  font-family: $fontCrimsonPro
+  font-size: 1.6em
+  color: $colorMercury
+  background: $colorLack
   transition: 0.5s
 
 .accountMenuButton:hover
-  background: aquamarine
+  background: $colorRZB
 
 .accountAvatar
   height: 8rem
   width: 8rem
 
 .accountSocial
-  height: 3rem
-  width: 100%
-  background: blue
+  display: flex
+  justify-content: space-around
+  align-items: center
+  margin-top: 1.5em
+  gap: 0.7em
+  height: 5rem
+  width: 50%
+
+.mediaIcon
+  display: flex
+  justify-content: center
+  align-items: center
+  background: $colorRZB
+  padding: 1em
+  border-radius: 8px
+  transition: 0.3s
+  height: 4rem
+  width: 4rem
+
+.mediaIcon:hover
+  background: $colorFadedOrange
+
+.profileTitle
+  align-self: flex-end
+  font-family: $fontCrimsonPro
+  padding-right: 1.5em
+  color: $colorMercury
+  font-weight: 400
+  border-bottom: $colorRZB 1px solid
+
+.userDataForm
+  display: flex
+  flex-direction: column
+  gap: 40%
+  font-family: $fontLibMath
+  font-size: 1.2rem
