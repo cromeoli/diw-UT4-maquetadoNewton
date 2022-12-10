@@ -1,0 +1,77 @@
+.registerOverlay //Main
+  display: none
+  flex-direction: column
+  position: absolute
+  top: 6.5rem
+  left: 3%
+  height: 55vh
+  width: 40vh
+  transition: display 500ms ease-in
+  background: $colorBlacknoire
+  border-radius: 8px
+  padding: 1.4em 0.7em 0.5em 0.7em
+  z-index: 1
+  @media (max-width: $mediaQuerySize)
+    left: 10vw
+    top: 4rem
+
+.registerForm
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 1.3em
+  border-top: $colorMercury
+  border-top-width: 0.5px
+  border-top-style: solid
+  padding: 1em
+  margin-top: 0.5em
+  font-size: 1.3em
+
+.formInputBox
+  width: 100%
+  height: 3.5vh
+  background: $colorMercury
+  border-radius: 4px
+  text-indent: 10px
+
+.registerSignUpButton
+  padding: 0.5rem 1.1rem 0.5rem 1.1rem
+  color: $colorMercury
+  font-family: $fontCrimsonPro
+  font-size: 1em
+  background: $colorRZB
+  border-radius: 8px
+  transition: 0.5s
+
+.registerSignUpButton:hover
+  color: $colorBlacknoire
+  background: $colorFadedOrange
+
+.continueWithButtons
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 1em
+
+
+.continueButton:hover
+  color: $colorBlacknoire
+  background: $colorFadedOrange
+  border-color: $colorFadedOrange
+
+
+.continueButton
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 80%
+  height: 40%
+  color: $colorMercury
+  padding: 1em
+  border: 0.10em solid $colorRZB
+  border-radius: 9px
+  transition: 0.5s
+  font-size: 1.3em
+
+.continueImg
+  padding-right: 5px

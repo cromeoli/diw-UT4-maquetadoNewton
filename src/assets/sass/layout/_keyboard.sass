@@ -1,0 +1,61 @@
+.keyBoardSection
+  display: grid
+  justify-content: center
+  justify-items: center
+  grid-template-columns: repeat(9, 2rem)
+  gap: 0.35rem 2.2rem
+  width: 67vw
+  min-width: 27rem
+  padding-top: 0.2rem
+  @media (max-width: $mediaQuerySize)
+    grid-template-columns: repeat(6,2rem)
+    gap: 0.7rem 1.7rem
+    width: 100%
+
+
+.keyboardButton
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $colorBlacknoire
+  font-family: $fontLibMath
+  font-size: 1.4em
+  height: 2.9rem
+  width: 3.4rem
+  border-radius: 2px
+  background: $colorMercury
+  transition: 0.3s
+  @media (max-width: $mediaQuerySize)
+    height: 2em
+    width: 2.6em
+    font-size: 1.2em
+
+.keyboardButton:hover
+  background: $colorClearOrange
+
+.keyboardButton:visited
+  color: $colorBlacknoire
+
+.clearButton
+  height: 100%
+  width: 100%
+  border-radius: 2px
+  background: $colorClearOrange
+  transition: 0.3s
+
+.clearButton:hover
+  background: $colorRZB
+
+.customIcon
+  height: 100%
+  width: 100%
+
+.cscAlign
+  grid-column-start: 2
+  @media (max-width: $mediaQuerySize)
+    grid-column-start: auto
+
+.derivAlign
+  grid-column-start: auto
+  @media (max-width: $mediaQuerySize)
+    grid-column-start: 2

@@ -1,0 +1,38 @@
+.sticky
+  position: sticky
+  width: 100%
+
+.navbar
+  display: flex
+  justify-content: space-between
+  background: $colorBlacknoire
+  min-height: 7vh
+  max-height: 10vh
+  padding: 16px 17px 13px 45px
+
+  @media (max-width: $mediaQuerySize)
+    justify-content: flex-end
+
+.burger
+  width: 2rem
+
+.burgerIcon
+  width: 100%
+  height: 100%
+  transition: 0.5s
+
+.burgerIcon:hover
+  content: url("../img/hoverBurger.svg")
+
+.bringBackNewton
+  color: $colorMercury
+  font-family: $fontCrimsonPro
+  font-weight: 400
+  font-size: 2.3em
+  margin: auto
+  transition: 0.5s
+
+.bringBackNewton:hover
+  background-image: linear-gradient($colorMercury, $colorRZB)
+  background-clip: text
+  color: transparent

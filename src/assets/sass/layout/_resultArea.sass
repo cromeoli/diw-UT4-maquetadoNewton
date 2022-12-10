@@ -1,0 +1,42 @@
+.resultSection
+  width: 37%
+  min-width: 29rem
+  padding: 4rem 0 1rem 0
+  @media (max-width: $mediaQuerySize)
+    padding: 3rem 1.5rem 0 1.5rem
+    width: 100%
+    min-width: auto
+
+.resultBox
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  height: 28vh
+  width: inherit
+  padding: 2rem
+  border-radius: 8px
+  font-family: $fontLibMono
+  font-size: 1.4em
+  background: $colorMercury
+
+.copyToClipboard
+  width: 1.2em
+  position: absolute
+  right: 1em
+  bottom: 20px
+  @media (max-width: $mediaQuerySize)
+
+.copyToClipboardImg
+  height: 100%
+  width: 100%
+
+.copyToClipboardImg:hover
+  content: url("../img/hoverClipboard.svg")
+
+.resultBoxBackground
+  padding: 2rem
+  border-radius: 8px
+  background: #5e5e61
+  @media (max-width: $mediaQuerySize)
+    padding: 1.1rem
