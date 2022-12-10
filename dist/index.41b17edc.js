@@ -1,9 +1,11 @@
 let burgerButton = document.getElementById("burger");
+let burgerAccountButton = document.getElementById("burgerAccount");
 let logInButton = document.getElementById("logInButton");
 let signUpButton = document.getElementById("signUpButton");
 let formSignUp = document.getElementById("formSignUp");
 let formLogIn = document.getElementById("formLogIn");
 let overlayCloseArea = document.querySelector(".overlayCloseArea");
+let path = window.location.pathname;
 function openHome() {
     let homeOverlay = document.querySelector(".homeOverlay");
     let overlayClose = document.querySelector(".overlayCloseArea");
@@ -16,9 +18,15 @@ function openHome() {
 }
 function openGuest() {
     let guestOverlay = document.querySelector(".guestOverlay");
+    let homeOverlay = document.querySelector(".homeOverlay");
     let overlayArea = document.querySelector(".overlayCloseArea");
-    guestOverlay.style.display = "flex";
-    overlayArea.style.display = "flex";
+    if (path === "/index.html") {
+        guestOverlay.style.display = "flex";
+        overlayArea.style.display = "flex";
+    } else {
+        homeOverlay.style.display = "flex";
+        overlayArea.style.display = "flex";
+    }
 }
 function openRegister() {
     let registerOverlay = document.querySelector(".registerOverlay");
