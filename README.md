@@ -9,3 +9,7 @@ y de lo que se esté tratando de hacer. Si se está tratando de realizar un proy
 incluir el CSS de estas maneras puede ser más rápido y cómodo que de formas alternativas. Sin embargo, si hablamos de sitios 
 más grandes y proyectos completos, hacerlo estaría muy contraindicado debido a que lo correcto aquí es tomar un enfoque modular
 que nos permita acceder a fracciones de código más pequeñas y manejables.
+
+## Captura validacion CSS
+
+![imagen](https://user-images.githubusercontent.com/92324278/206931919-03573293-e979-4e02-8e92-84d650793c4d.png)
