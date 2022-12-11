@@ -7,6 +7,10 @@ let profileButton = document.getElementById("profile");
 let securityButton = document.getElementById("security");
 let paymentButton = document.getElementById("payment");
 let settingsButton = document.getElementById("settings");
+let profileIcon = document.getElementById("accountIcon");
+let securityIcon = document.getElementById("securityIcon");
+let billingIcon = document.getElementById("billingIcon");
+let settingsIcon = document.getElementById("settingsIcon");
 let currentView = document.getElementById(currentAccountId);
 currentView.style.background = "#E9470C";
 function openProfile() {
@@ -53,5 +57,9 @@ profileButton.addEventListener("click", openProfile);
 securityButton.addEventListener("click", openSecurity);
 paymentButton.addEventListener("click", openPayment);
 settingsButton.addEventListener("click", openSettings);
+profileIcon.addEventListener("click", openProfile);
+securityIcon.addEventListener("click", openSecurity);
+billingIcon.addEventListener("click", openPayment);
+settingsIcon.addEventListener("click", openSettings);
 
 //# sourceMappingURL=account.e59537f6.js.map
