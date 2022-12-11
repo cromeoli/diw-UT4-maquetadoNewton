@@ -1,15 +1,16 @@
+// Hojas base
 @import "utilities/variables"
 @import "./base/_typo.sass"
 @import "./base/_reset.sass"
 @import "base/main"
 
-
+// Layout de la main page
 @import "./layout/navbar"
 @import "./layout/inputArea"
 @import "./layout/keyboard"
 @import "./layout/resultArea"
 
-
+// Menús overlay
 @import "overlayMenus/bizumOverlay"
 @import "overlayMenus/guestOverlay"
 @import "overlayMenus/loginOverlay"
@@ -18,79 +19,29 @@
 @import "overlayMenus/closeArea"
 @import "overlayMenus/cardOverlay"
 
+// Vistas
 @import "views/account"
 @import "views/donate"
 @import "views/about"
 @import "views/404"
 
+// Hojas base de las vistas
 @import "base/accountMain"
 @import "base/donateMain"
 @import "base/aboutMain"
 
-
+// Componentes
 @import "components/logo"
 @import "components/inputs"
 @import "components/buttons"
 @import "components/sliderCheck"
 @import "components/customSelect"
 
+/*Si se descomenta esta línea, el menú principal toma el tema claro,
+ lo diseñe de esta forma porque pensé que era la mejor, pero para
+ hacerlo gestionando los imports necesito node.js
+
 //@import "themes/light"
-
-
-
-
-
-///////////////////// Navbar
-
-
-
-
-///////////////////// Logo
-
-
-
-
-
-///////////////////// inputArea
-
-
-
-
-///////////////////// Keyboard
-//Media queries para ir reduciendo tamaño del teclado
-
-
-
-
-
-
-///////////////////// Result
-
-
-
-
-///////////////////// Overlay Menus
-
-// Login Overlay
-
-
-// Register Overlay
-
-
-// Guest overlay
-
-
-
-// Menu overlay
-
-
-// Close area
-
-
-
-///////////////////////////////
-
-
 
 
 
