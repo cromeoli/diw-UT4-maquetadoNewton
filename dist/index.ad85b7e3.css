@@ -22,6 +22,7 @@ input {
 
 body {
   background: #131317;
+  transition: all 1s;
 }
 
 .mainFrame {
