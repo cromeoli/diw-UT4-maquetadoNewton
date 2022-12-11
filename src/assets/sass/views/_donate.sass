@@ -1,3 +1,71 @@
-.donateBoard
+.contentBoard
+  display: flex
+  justify-content: center
+  flex-direction: column
+  position: relative
+
+.donationsBoard
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  gap: 1.5em
+  position: relative
   background: $colorBlacknoire
-  border-radius: 10px
+  border-radius: 9px
+  padding: 2em 5em
+  @media (max-width: $mediaQuerySize)
+    background: $colorLack
+    padding: 1em 2em
+
+.commonTitle
+  font-family: $fontCrimsonPro
+  font-weight: 400
+  font-size: 2.5em
+  color: $colorMercury
+  padding: 0.5em 0 1em 0
+  @media (max-width: $mediaQuerySize)
+    font-size: 2em
+
+.alignNewtonLogo
+  align-self: center
+
+.donateButton
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  width: 100%
+  padding: 1em
+  border: 0.10em solid $colorRZB
+  border-radius: 9px
+  transition: 0.5s
+  font-size: 1.3em
+  font-family: $fontLibMath
+  color: $colorFadedOrange
+
+.donateButton:hover
+  background: $colorRZB
+  border-color: $colorRZB
+
+.divider
+  width: 100%
+  height: 1em
+
+.cardIcon
+  width: 7em
+  height: 2em
+
+.patreonIcon
+  width: 7em
+  height: 2em
+
+.bizumIcon
+  width: 7em
+  height: 2em
+
+.paypalIcon
+  width: 7em
+  height: 2em
+
+
