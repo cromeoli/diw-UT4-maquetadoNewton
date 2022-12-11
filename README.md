@@ -12,4 +12,8 @@ que nos permita acceder a fracciones de código más pequeñas y manejables.
 
 ## Captura validacion CSS
 
-![imagen](https://user-images.githubusercontent.com/92324278/206931919-03573293-e979-4e02-8e92-84d650793c4d.png)
+![validacion](https://user-images.githubusercontent.com/92324278/206931967-12110e81-4759-4c85-98e2-07f15bb45db6.png)
+
+## Notas Importantes
+
+Para acceder a la página 404, hay que hacer click sobre el igual como si se introdujera una operación a resolver
