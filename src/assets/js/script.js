@@ -70,6 +70,7 @@ function closeOverlay(){
     let registerOverlay = document.querySelector('.registerOverlay')
     let loginOverlay = document.querySelector('.loginOverlay')
     let menuOverlay = document.querySelector('.homeOverlay')
+    let bizumOverlay = document.querySelector('.bizumOverlay')
 
     overlayClose.style.display = "none"
 
@@ -84,6 +85,8 @@ function closeOverlay(){
 
     loginOverlay.style.opacity =  0
     delay(200).then(() => loginOverlay.style.display = "none")
+
+    closeBizum()
 }
 
 overlayCloseArea.addEventListener("click", closeOverlay)

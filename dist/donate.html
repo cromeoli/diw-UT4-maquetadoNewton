@@ -6,6 +6,7 @@
   <title>Newton</title>
   <link rel="stylesheet" href="/index.ad85b7e3.css">
   <script defer="" src="/index.41b17edc.js"></script>
+  <script defer="" src="/donate.754efb22.js"></script>
 </head>
 <body>
 <!-- Navbar -->
@@ -14,7 +15,7 @@
     <a href="#" id="burger" class="burger">
       <img src="/Burger.900c0d71.svg" class="burgerIcon">
     </a>
-    <a href="/index.html" class="bringBackNewton">newton</a>
+    <a href="/index.html" class="returnToNewton">newton</a>
   </nav>
 </header>
 
@@ -30,12 +31,49 @@
     <section class="logoSection alignNewtonLogo">
       <a href="/index.html" class="logoNewton">newton</a>
     </section>
+
+    <div class="bizumOverlay">
+      <p class="bizumDonationText">
+        Donations phone number
+      </p>
+      <p class="bizumMobileNumber">
+        +1 123 123 123
+      </p>
+      <button id="bizumCloseButton" class="bizumCloseButtom">
+        Close
+      </button>
+    </div>
+
+    <div class="cardOverlay">
+      <form class="userDataForm">
+        <label class="userDataLabel">
+          Credit card number
+          <input class="formInputBox" placeholder="1234 1234 1234 1234">
+        </label>
+        <label class="userDataLabel">
+          Caducity
+          <input class="formInputBox" placeholder="MM/YY">
+        </label>
+        <label class="userDataLabel">
+          CVC
+          <input class="formInputBox" placeholder="000">
+        </label>
+        <label class="userDataLabel">
+          Country
+          <input class="formInputBox" placeholder="Enter your country">
+        </label>
+        <button id="checkButton" class="orangeRoundedButton">
+          Check card
+        </button>
+      </form>
+    </div>
+
   </div>
 
   <div class="donationsBoard">
     <h1 class="commonTitle">Support Newton</h1>
 
-      <a href="#" class="donateButton cardButton">
+      <a href="#" id="card" class="donateButton cardButton">
         <img src="/creditcard.000ec8fc.svg" class="cardIcon">
         <p class="cardText">Credit card</p>
       </a>
@@ -48,7 +86,7 @@
       <a href="#" class="donateButton">
         <img src="/patreon.0efe6416.svg" class="patreonIcon">
       </a>
-      <a href="#" class="donateButton">
+      <a href="#" id="bizum" class="donateButton">
         <img src="/bizum.b00e98ae.svg" class="bizumIcon">
       </a>
 
