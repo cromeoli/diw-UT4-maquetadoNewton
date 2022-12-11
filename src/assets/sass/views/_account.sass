@@ -22,9 +22,11 @@
   margin-top: 3rem
   margin-left: 2em
   background: $colorLack
+  min-width: 14em
 
   grid-area: 1 / 1 / 2 / 2
 
+// Areas ////////////
 .profileArea
   display: flex
   box-sizing: border-box
@@ -80,6 +82,8 @@
   background: $colorBlacknoire
   grid-area: 1 / 2 / 2 / 3
 
+
+//////////////////// AreasEnd ///////////
 .accountMenuButton
   padding: 1rem
   width: 100%
@@ -131,9 +135,45 @@
 .userDataForm
   display: flex
   flex-direction: column
-  gap: 40%
+  gap: 0.5em
   font-family: $fontLibMath
   font-size: 1.2rem
+
+.miniFormTitle
+  padding-bottom: 1em
+
+.userDataLabel
+  font-family: $fontLibMath
+  font-weight: 300
+  color: $colorMercury
+  padding-bottom: 0.5em
+
+.settingsContainer
+  display: flex
+  flex-direction: column
+  font-family: $fontLibMath
+  font-size: 1.2em
+  color: $colorMercury
+  width: 50%
+  min-width: 10em
+  gap: 2em
+  margin-top: 2em
+
+.settingsLabel
+  width: 100%
+
+.dangerZone
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  gap: 1.5em
+
+  color: $colorMercury
+  padding: 1em
+  border: 0.1em solid $colorRZB
+  border-radius: 9px
+  transition: 0.5s
+
 
 // Manejar sesión activa, voy rellenando con JS en función de la vista activa
 

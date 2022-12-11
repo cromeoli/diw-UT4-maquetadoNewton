@@ -458,6 +458,7 @@ body {
 
 .accountMenu {
   height: 45%;
+  min-width: 14em;
   background: #131317;
   border-radius: 10px;
   flex-direction: column;
@@ -554,9 +555,48 @@ body {
 
 .userDataForm {
   flex-direction: column;
-  gap: 40%;
+  gap: .5em;
   font-family: LibertinusMath-Regular, serif;
   font-size: 1.2rem;
+  display: flex;
+}
+
+.miniFormTitle {
+  padding-bottom: 1em;
+}
+
+.userDataLabel {
+  color: #e9e9e9;
+  padding-bottom: .5em;
+  font-family: LibertinusMath-Regular, serif;
+  font-weight: 300;
+}
+
+.settingsContainer {
+  color: #e9e9e9;
+  width: 50%;
+  min-width: 10em;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+  font-family: LibertinusMath-Regular, serif;
+  font-size: 1.2em;
+  display: flex;
+}
+
+.settingsLabel {
+  width: 100%;
+}
+
+.dangerZone {
+  color: #e9e9e9;
+  border: .1em solid #e9470c;
+  border-radius: 9px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5em;
+  padding: 1em;
+  transition: all .5s;
   display: flex;
 }
 
@@ -586,6 +626,7 @@ body {
   width: 100%;
   height: 3.5vh;
   text-indent: 10px;
+  color: #07070a;
   background: #e9e9e9;
   border-radius: 4px;
   font-family: LibertinusMath-Regular, serif;
@@ -632,6 +673,10 @@ body {
   border-color: #eebc98;
 }
 
+.continuePaypal:hover {
+  content: url("hoverPaypal.1bbc7fe5.svg");
+}
+
 .continueButton {
   width: 80%;
   height: 40%;
@@ -666,6 +711,100 @@ body {
 .logInButton:hover, .signUpButton:hover {
   color: #07070a;
   background: #eebc98;
+}
+
+.orangeRoundedButton {
+  color: #e9e9e9;
+  background: #e9470c;
+  border: 0;
+  border-radius: 8px;
+  margin: auto;
+  padding: .5em;
+  font-family: Crimson Pro, serif;
+  font-size: .9em;
+}
+
+.orangeRoundedButton:hover {
+  cursor: pointer;
+  color: #07070a;
+  background: #eebc98;
+}
+
+.deleteButton {
+  color: #e9e9e9;
+  background: red;
+  border: 0;
+  border-radius: 8px;
+  padding: .5em;
+  font-family: Crimson Pro, serif;
+  font-size: .8em;
+  transition: all 1s;
+}
+
+.deleteButton:hover {
+  cursor: help;
+  color: #07070a;
+  background: #e9e9e9;
+}
+
+.switch {
+  width: 60px;
+  height: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+.slider {
+  cursor: pointer;
+  background-color: #ccc;
+  transition: all .4s;
+  position: absolute;
+  inset: 0;
+}
+
+.slider:before {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
+  transition: all .4s;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
+
+input:checked + .slider {
+  background-color: #e9470c;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sliderAlign {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.customSelect {
+  width: 8em;
+  background: #e9e9e9;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  padding: .2em;
+  font-family: Crimson Pro, serif;
+  font-size: 1em;
+  transition: all .5s;
 }
 
 .logoNewton {

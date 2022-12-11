@@ -37,32 +37,32 @@
       <img src="/Avatar.1c82c2e7.png" class="accountAvatar">
 
       <form class="userDataForm">
-      <label>
+      <label class="userDataLabel">
         Username
-        <input value="Christian" class="formInputBox">
+        <input value="Cromoli" class="formInputBox">
       </label>
-      <label>
-        Password
-        <input type="password" value="pestillo" class="formInputBox">
+      <label class="userDataLabel">
+        Full Name
+        <input value="Christian Romero Oliva" class="formInputBox">
       </label>
-      <label>
+      <label class="userDataLabel">
         Associed account
         <input value="cromoli1808@gmail.com" class="formInputBox">
       </label>
-      <label>
+      <label class="userDataLabel">
         Phone
         <input value="777 777 777" class="formInputBox">
       </label>
       </form>
 
       <span class="accountSocial">
-        <a href="#" class="mediaIcon">
+        <a href="https://twitter.com/" class="mediaIcon">
           <img src="/Twitter.67b17bee.svg">
         </a>
-        <a href="#" class="mediaIcon">
+        <a href="https://www.instagram.com/" class="mediaIcon">
           <img src="/Instagram.3302a100.svg">
         </a>
-        <a href="#" class="mediaIcon">
+        <a href="https://github.com/cromeoli" class="mediaIcon">
           <img src="/github.58d0320b.svg">
         </a>
         <a href="#" class="mediaIcon">
@@ -76,124 +76,102 @@
 
     <section class="securityArea">
       <h1 class="profileTitle">Security</h1>
-      <img src="/Avatar.1c82c2e7.png" class="accountAvatar">
 
       <form class="userDataForm">
-        <label>
-          Username
-          <input value="Christian" class="formInputBox">
+        <label class="userDataLabel">
+          Current password
+          <input type="password" class="formInputBox" placeholder="Enter current password...">
         </label>
-        <label>
-          Password
-          <input type="password" value="pestillo" class="formInputBox">
+        <label class="userDataLabel">
+          New password
+          <input type="password" class="formInputBox" placeholder="New password">
         </label>
-        <label>
-          Associed account
-          <input value="cromoli1808@gmail.com" class="formInputBox">
+        <label class="userDataLabel">
+          Confirm new password
+          <input type="password" class="formInputBox" placeholder="Confirm new password">
         </label>
-        <label>
-          Phone
-          <input value="777 777 777" class="formInputBox">
+        <label class="userDataLabel">
+          Change associed email
+          <input class="formInputBox" placeholder="New email">
         </label>
+        <button class="orangeRoundedButton">
+          Set two step validation
+        </button>
       </form>
-
-      <span class="accountSocial">
-        <a href="#" class="mediaIcon">
-          <img src="/Twitter.67b17bee.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/Instagram.3302a100.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/github.58d0320b.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/+.7ceaa0d3.svg">
-        </a>
-      </span>
 
     </section>
 
     <!-- Payments -->
 
-    <section class="settingsArea">
-      <h1 class="profileTitle">Settings</h1>
-      <img src="/Avatar.1c82c2e7.png" class="accountAvatar">
+    <section class="paymentsArea">
+      <h1 class="profileTitle">Payments</h1>
 
       <form class="userDataForm">
-        <label>
-          Username
-          <input value="Christian" class="formInputBox">
+        <label class="userDataLabel">
+         <p class="miniFormTitle">Connect with Paypal</p>
+          <a href="#" class="continueButton">
+            <img src="/paypal.68e89422.svg">
+          </a>
         </label>
-        <label>
-          Password
-          <input type="password" value="pestillo" class="formInputBox">
+        <label class="userDataLabel">
+          Credit card number
+          <input class="formInputBox" placeholder="1234 1234 1234 1234">
         </label>
-        <label>
-          Associed account
-          <input value="cromoli1808@gmail.com" class="formInputBox">
+        <label class="userDataLabel">
+          Caducity
+          <input type="password" class="formInputBox" placeholder="New password">
         </label>
-        <label>
-          Phone
-          <input value="777 777 777" class="formInputBox">
+        <label class="userDataLabel">
+          CVC
+          <input type="password" class="formInputBox" placeholder="Confirm new password">
         </label>
+        <label class="userDataLabel">
+          Country
+          <input class="formInputBox" placeholder="New email">
+        </label>
+        <button class="orangeRoundedButton">
+          Check card
+        </button>
       </form>
-
-      <span class="accountSocial">
-        <a href="#" class="mediaIcon">
-          <img src="/Twitter.67b17bee.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/Instagram.3302a100.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/github.58d0320b.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/+.7ceaa0d3.svg">
-        </a>
-      </span>
 
     </section>
 
     <!-- Settings -->
-    <section class="paymentsArea">
-      <h1 class="profileTitle">Payments</h1>
-      <img src="/Avatar.1c82c2e7.png" class="accountAvatar">
+    <section class="settingsArea">
+      <h1 class="profileTitle">Settings</h1>
+      <form class="settingsContainer">
 
-      <form class="userDataForm">
-        <label>
-          Username
-          <input value="Christian" class="formInputBox">
-        </label>
-        <label>
-          Password
-          <input type="password" value="pestillo" class="formInputBox">
-        </label>
-        <label>
-          Associed account
-          <input value="cromoli1808@gmail.com" class="formInputBox">
-        </label>
-        <label>
-          Phone
-          <input value="777 777 777" class="formInputBox">
-        </label>
+        <div class="sliderAlign">
+          <p>Light Theme</p>
+          <label class="switch">
+            <input id="themeLightSlider" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="sliderAlign">
+          <p>Language</p>
+          <label>
+            <select class="customSelect">
+              <option value="value1">Español</option>
+              <option value="value2" selected="">English</option>
+              <option value="value3">Français</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="dangerZone">
+          <p>Danger Zone</p>
+          <button class="deleteButton">
+            Delete Account
+          </button>
+        </div>
+
+
+
       </form>
 
-      <span class="accountSocial">
-        <a href="#" class="mediaIcon">
-          <img src="/Twitter.67b17bee.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/Instagram.3302a100.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/github.58d0320b.svg">
-        </a>
-        <a href="#" class="mediaIcon">
-          <img src="/+.7ceaa0d3.svg">
-        </a>
-      </span>
+
 
     </section>
   </div>
