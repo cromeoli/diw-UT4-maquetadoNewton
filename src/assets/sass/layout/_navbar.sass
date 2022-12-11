@@ -13,8 +13,27 @@
   @media (max-width: $mediaQuerySize)
     justify-content: flex-end
 
+.navbarAccount
+  display: none
+  justify-content: space-between
+  min-height: 7vh
+  max-height: 10vh
+  padding: 16px 17px 13px 45px
+  background: $colorBlacknoire
+
+  @media (max-width: $mediaQuerySize)
+    display: flex
+
 .burger
   width: 2rem
+
+.icon
+  width: 2rem
+
+.iconSVG
+  width: 100%
+  height: 100%
+  transition: 0.5s
 
 .burgerIcon
   width: 100%
@@ -25,6 +44,12 @@
   animation: svgFade 0.5s linear
   content: url("../img/hoverBurger.svg")
   rotate: 90deg
+
+.iconSVG:hover
+  transform: scale(1.3)
+
+.icon:hover
+  width: 3rem
 
 // Estilo del logo newton que se añade en la navbar cuando estamos en pantallas secundarias
 .returnToNewton

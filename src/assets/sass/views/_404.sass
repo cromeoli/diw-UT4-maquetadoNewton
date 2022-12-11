@@ -1,0 +1,34 @@
+.normalNewton
+  position: relative
+  rotate: 90deg
+  transition: 3s
+  z-index: 1
+  bottom: -1em
+
+.normal404
+  font-size: calc(80px + 2.1vw)
+  font-family: $fontCrimsonPro
+  color: $colorMercury
+  background: $colorBlacknoire
+  border-radius: 10px
+  padding: 1em
+  z-index: 3
+
+.dropNewton
+  animation-delay: 2s
+  transform-origin: top left
+  animation: falling 4s linear
+
+@keyframes falling
+  0%
+    rotate: 0deg
+  30%
+    rotate: 80deg
+  50%
+    rotate: 40deg
+  70%
+    rotate: 60deg
+  100%
+    rotate: 90deg
+
+

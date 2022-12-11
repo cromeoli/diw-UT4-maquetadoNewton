@@ -79,11 +79,26 @@ body {
   }
 }
 
-.burger {
+.navbarAccount {
+  min-height: 7vh;
+  max-height: 10vh;
+  background: #07070a;
+  justify-content: space-between;
+  padding: 16px 17px 13px 45px;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbarAccount {
+    display: flex;
+  }
+}
+
+.burger, .icon {
   width: 2rem;
 }
 
-.burgerIcon {
+.iconSVG, .burgerIcon {
   width: 100%;
   height: 100%;
   transition: all .5s;
@@ -93,6 +108,14 @@ body {
   content: url("hoverBurger.cf5128eb.svg");
   animation: .5s linear svgFade;
   rotate: 90deg;
+}
+
+.iconSVG:hover {
+  transform: scale(1.3);
+}
+
+.icon:hover {
+  width: 3rem;
 }
 
 .returnToNewton {
@@ -549,6 +572,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 600px) {
+  .accountMenu {
+    display: none;
+  }
+}
+
 .profileArea {
   box-sizing: border-box;
   min-height: auto;
@@ -798,6 +827,51 @@ body {
 
 .aboutContactButton {
   width: 15em;
+}
+
+.normalNewton {
+  z-index: 1;
+  transition: all 3s;
+  position: relative;
+  bottom: -1em;
+  rotate: 90deg;
+}
+
+.normal404 {
+  color: #e9e9e9;
+  z-index: 3;
+  background: #07070a;
+  border-radius: 10px;
+  padding: 1em;
+  font-family: Crimson Pro, serif;
+  font-size: calc(80px + 2.1vw);
+}
+
+.dropNewton {
+  transform-origin: 0 0;
+  animation: 4s linear falling;
+}
+
+@keyframes falling {
+  0% {
+    rotate: none;
+  }
+
+  30% {
+    rotate: 80deg;
+  }
+
+  50% {
+    rotate: 40deg;
+  }
+
+  70% {
+    rotate: 60deg;
+  }
+
+  100% {
+    rotate: 90deg;
+  }
 }
 
 .accountMain {
